@@ -1,0 +1,188 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    font-family: 'Lobster Two', cursive;
+}
+.jumbotron {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:absolute;
+    background-color:black;
+    color: pink;
+    text-align: center;
+    margin: 0;
+    animation: animate 16s ease-in-out infinite;
+    font-family: 'Lobster Two', cursive;
+    font-size: x-large;
+}
+@keyframes animate{
+    0%,100%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../project/img/hd1.jpg);
+    }
+    25%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../project/img/poster.jpg);
+    }
+    50%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../project/img/e1.jpg);
+    }
+    75%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../project/img/11.jpg);
+    }
+}
+
+.jumbotron nav ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 30px;
+    font-family: 'Lobster Two', cursive;
+}
+.jumbotron  nav ul li{
+    display:inline-table;
+    margin-left: 5;
+   
+}
+.jumbotron nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+.jumbotron nav ul li a:hover{
+    background-color:white;
+    color: black;
+    
+}
+#section2{
+    height: 675px;
+    margin-top: 3px;
+    background-color: salmon;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+}
+#section2 nav ul{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+#section2 nav ul li{
+    position: relative;
+    display: flex;
+    width: calc(50vw/4);
+    height: 115vh;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    transition: all ease 0.5s;
+}
+#section2 nav ul li:last-child{
+    border-right : none;
+}
+#section2 nav ul li a{
+    color: #fff;
+    text-decoration : none;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transform: rotate(-90deg);
+    transition: all ease 0.5s;
+}
+#section2 nav ul li:hover a{
+    transform: rotate(0deg) scale(1.4);
+}
+#section2 nav ul li:hover{
+    flex-grow: 4;
+}
+#section2 nav ul li:nth-child(1){
+    background:  url(../../project/img/11.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section2 nav ul li:nth-child(2){
+    background: url(../../project/img/2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section2 nav ul li:nth-child(3){
+    background: url(../../project/img/3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section2 nav ul li:nth-child(4){
+    background: url(../../project/img/44.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section2 nav ul li:nth-child(5){
+    background: url(../../project/img/Venus.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section2 nav ul li::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-left: 50px;
+}
+.Main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 70px;
+}
+.gotopbtn{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration:none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+#section3{
+    margin: 0%;
+}
+.footer {
+    width: 100%;
+    height: 35vh;
+    background-color: pink;
+    background-position: center top;
+    background-size:cover; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Lobster Two', cursive;
+    margin:0;
+}
